@@ -137,15 +137,15 @@ namespace Lab5.ViewModel
             try
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO tblJeu(nom,emplacement,idJoueur) VALUES(@param1,@param2,@param3)", con);
-                cmd.Parameters.Add("@param", SqlDbType.VarChar, 255).Value = AjouterJ.NomJeu;
+                cmd.Parameters.Add("@param1", SqlDbType.VarChar, 255).Value = AjouterJ.NomJeu;
                 cmd.Parameters.Add("@param2", SqlDbType.VarChar, 255).Value = AjouterJ.EmplacementJeu;
                 cmd.Parameters.Add("@param3", SqlDbType.Int, 10).Value = AjouterJ.IdJoueur;
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-              
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -163,9 +163,9 @@ namespace Lab5.ViewModel
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

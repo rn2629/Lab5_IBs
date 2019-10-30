@@ -19,6 +19,10 @@
                 <Label Content=" Nom Jeu:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="117" />
                 <TextBox Text="{Binding AjouterJ.NomJeu, UpdateSourceTrigger=PropertyChanged}"  Width="218" FontSize="14" FontFamily="Cooper Black"/>
             </StackPanel>
+            <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center" Margin="278,0,188,0" Width="334">
+                <Label Content=" ID Joueur:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="117" />
+                <TextBox  Width="218" FontSize="14" FontFamily="Cooper Black"/>
+            </StackPanel>
             <StackPanel Margin="0,20,-0.4,20">
                 <Button Command="{Binding Ajouter}"  Content="Ajouter Jeu" Height="40" FontSize="20" FontFamily="Magneto" FontWeight="Black" BorderBrush="Black" />
             </StackPanel>
