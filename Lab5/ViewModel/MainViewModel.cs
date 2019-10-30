@@ -16,6 +16,7 @@ namespace Lab5.ViewModel
 {
     class MainViewModel: BaseViewModel, INotifyPropertyChanged
     {
+
         Personne pers;
         AjouterJeu ajouter;
 
