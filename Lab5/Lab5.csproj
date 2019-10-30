@@ -54,7 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\AjoutJeu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Inscription.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LancerJeu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -62,7 +74,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Command\BaseCommand.cs" />
+    <Compile Include="Command\Connexion.cs" />
+    <Compile Include="Command\OpenCommand.cs" />
+    <Compile Include="Command\OpenConnexion.cs" />
+    <Compile Include="Model\AjouterJeu.cs" />
+    <Compile Include="Model\Personne.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\AjoutJeu.xaml.cs">
+      <DependentUpon>AjoutJeu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Inscription.xaml.cs">
+      <DependentUpon>Inscription.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LancerJeu.xaml.cs">
+      <DependentUpon>LancerJeu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -93,5 +122,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="Lab5.View.Inscription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5.View"
+          xmlns:local2="clr-namespace:Lab5.ViewModel"
+        xmlns:local3="clr-namespace:Lab5.View"
+        mc:Ignorable="d"
+        Title="Inscription" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Height="253" Margin="0,0,0,80.6">
+            <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center">
+                <Label Content=" Nom:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="67" />
+                <TextBox Text="{Binding Pers.Nom, UpdateSourceTrigger=PropertyChanged}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center">
+                <Label Content=" Prenom:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="91" />
+                <TextBox Text="{Binding Pers.Prenom, UpdateSourceTrigger=PropertyChanged}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
+            </StackPanel>
+           <!-- <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center">
+                <Label Content=" Date De Naissance:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="200" />
+                <TextBox Text="{Binding Personne.DateBirth, UpdateSourceTrigger=PropertyChanged}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
+            </StackPanel>-->
+            <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center">
+                <Label Content=" Adresse Courriel :" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="171" />
+                <TextBox Text="{Binding Pers.AdresseCourriel, UpdateSourceTrigger=PropertyChanged}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center" Margin="278,0,188,0" Width="334">
+                <Label Content=" Mot De Passe :" Foreground="Black" FontSize="16" FontFamily="Magneto" />
+                <TextBox Text="{Binding Pers.Password, UpdateSourceTrigger=PropertyChanged}"  Width="150" FontSize="14" FontFamily="Cooper Black"/>
+            </StackPanel>
+            <StackPanel Margin="0,20,-0.4,20">
+                <Button Content="Inscription" Command="{Binding Inscription}" Height="40" FontSize="20" FontFamily="Magneto" FontWeight="Black" BorderBrush="Black"/>
+                <Button  Command="{Binding SeConnecter}" Content="Se Connecter" Height="40" FontSize="20" FontFamily="Magneto" FontWeight="Black" BorderBrush="Black" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

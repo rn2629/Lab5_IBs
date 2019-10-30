@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Lab5
+namespace Lab5.View
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour AjoutJeu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AjoutJeu : UserControl
     {
-        public MainWindow()
+        public AjoutJeu()
         {
             InitializeComponent();
         }
