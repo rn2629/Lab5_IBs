@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Height="232" Margin="0,101,-0.4,87">
+            <StackPanel Margin="0,20,-0.4,20">
+                <Button Command="{Binding AjoutJeux}"  Content="Ajouter Jeu" Height="40" FontSize="20" FontFamily="Magneto" FontWeight="Black" BorderBrush="Black" />
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

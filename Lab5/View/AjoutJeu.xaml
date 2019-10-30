@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Lab5.View.AjoutJeu"
+﻿<Window x:Class="Lab5.View.AjoutJeu"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -13,15 +13,15 @@
 
             <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center">
                 <Label Content=" Emplacement Jeu :" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="184" />
-                <TextBox Text="{Binding AjouterJeu.EmplacementJeu}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
+                <TextBox Text="{Binding AjouterJ.EmplacementJeu}" Width="260" FontSize="16" FontFamily="Cooper Black"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Background="White" HorizontalAlignment="Center" Margin="278,0,188,0" Width="334">
                 <Label Content=" Nom Jeu:" Foreground="Black" FontSize="16" FontFamily="Magneto" Width="117" />
-                <TextBox Text="{Binding AjouterJeu.NomJeu, UpdateSourceTrigger=PropertyChanged}"  Width="218" FontSize="14" FontFamily="Cooper Black"/>
+                <TextBox Text="{Binding AjouterJ.NomJeu, UpdateSourceTrigger=PropertyChanged}"  Width="218" FontSize="14" FontFamily="Cooper Black"/>
             </StackPanel>
             <StackPanel Margin="0,20,-0.4,20">
                 <Button Command="{Binding Ajouter}"  Content="Ajouter Jeu" Height="40" FontSize="20" FontFamily="Magneto" FontWeight="Black" BorderBrush="Black" />
             </StackPanel>
         </StackPanel>
     </Grid>
-</UserControl>
+</Window>

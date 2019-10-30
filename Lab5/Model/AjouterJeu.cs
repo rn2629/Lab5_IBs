@@ -11,15 +11,18 @@ namespace Lab5.Model
     {
             
         string nomJeu = "";
-        string emplacementJeu;
+        string emplacementJeu ="";
+        int idJoueur;
 
         public AjouterJeu()
         {
             NomJeu = nomJeu;
             EmplacementJeu = emplacementJeu;
+            IdJoueur = idJoueur;
         }
 
         public string EmplacementJeu { get => emplacementJeu; set { emplacementJeu = value; OnPropertyChanged("EmplacementJeu"); } }
+        public int IdJoueur { get => idJoueur; set { idJoueur = value; OnPropertyChanged("IdJoueur"); } }
         public string NomJeu { get => nomJeu; set { nomJeu = value; OnPropertyChanged("NomJeu"); } }
 
         public event PropertyChangedEventHandler PropertyChanged;

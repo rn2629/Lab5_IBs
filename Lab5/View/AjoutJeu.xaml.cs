@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lab5.ViewModel;
 
 namespace Lab5.View
 {
     /// <summary>
     /// Logique d'interaction pour AjoutJeu.xaml
     /// </summary>
-    public partial class AjoutJeu : UserControl
+    public partial class AjoutJeu : Window
     {
         public AjoutJeu()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }

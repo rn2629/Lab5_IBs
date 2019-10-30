@@ -74,6 +74,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Command\AjouterJeux.cs" />
     <Compile Include="Command\BaseCommand.cs" />
     <Compile Include="Command\Connexion.cs" />
     <Compile Include="Command\OpenCommand.cs" />
